@@ -12,9 +12,16 @@ You are developing a simple job application. The candidates should be able to na
 ## Instructions to follow   
 - Download or clone this repository;    
 - Create your own private repository on GitHub and configure the application to point to your new repository;   
-- Choose your preferred code editor and start making your changes;  
+- Choose your preferred code editor and start making your changes;
+- Use only html, css and JS. It's not allowed use any another framework.
 - Commit and push your changes as you like; 
 - When you are finished, add [@flpms](https://github.com/flpms) and [@alequiscaruso](https://github.com/alequiscaruso) users as colaborators to your recently created private repository on GitHub; 
 - Finally, deploy to Heroku or any available server.    
+
+## You will be evaluated for
+
+- Complete all steps above
+- Attention to details, like fix bugs left in the code
+- Accessbility, Perfomance, Usability
 
 Good luck and have fun! 
