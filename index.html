@@ -5,42 +5,59 @@
 <link rel="stylesheet" href="./index.css">
 
 <body>
-    <div class="dds__msthd dds__msthd-offcanvas-wrapper" data-toggle="dds__msthd">
-        <nav class="dds__navbar dds__msthd-navbar-top dds__navbar-expand-md">
-            <div class="dds__msthd-top dds__container dds__no-gutters">
-                <div class="dds__msthd-top-ctnr">
-                    <div class="dds__msthd-icon-ctnr dds__msthd-logo">
-                        <a href="/" class="dds__icons dds__msthd-dell-icon"></a>
-                    </div>
-                </div>
-
-                <div class="">
-                    <button role="button" type="button" class="dds__btn dds__btn-primary dds__text-truncate"
-                        onclick="openSection('Home')">Home</button>
-                    <button role="button" type="button" class="dds__btn dds__btn-primary dds__text-truncate"
-                        onclick="openSection('Products')">Products</button>
-                    <button role="button" type="button" class="dds__btn dds__btn-primary dds__text-truncate"
-                        onclick="openSection('Careers')">Careers</button>
-                </div>
+    <aside id="app__aside" class="dds__side-nav__wrapper " data-toggle="dds__side-nav">
+        <nav class="dds__side-nav" aria-label="Main Navigation">
+            <ul class="dds__side-nav__menu" role="menu">
+                <li class="dds__side-nav__item" role="menuitem">
+                    <a onclick="openSection('Home')">
+                        <i class="dds__icon dds__icon--home dds__button__icon--start" aria-hidden="true"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="dds__side-nav__item" role="menuitem">
+                    <a onclick="openSection('Products')">
+                        <i class="dds__icon dds__icon--device-laptop dds__button__icon--start" aria-hidden="true"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li class="dds__side-nav__item" role="menuitem">
+                    <a onclick="openSection('Careers')">
+                        <i class="dds__icon dds__icon--user-check dds__button__icon--start" aria-hidden="true"></i>
+                        <span>Careers</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="dds__side-nav__toggle">
+                <button type="button" aria-label="collapse">
+                    <i class="dds__icon dds__icon--arrow-left" aria-hidden="true"></i>
+                </button>
+                <button type="button" aria-label="expand">
+                    <i class="dds__icon dds__icon--arrow-right" aria-hidden="true"></i>
+                </button>
             </div>
         </nav>
+    </aside>
+
+    <div id="Home" class="section">
+        <h2 class="dds__h2">Home</h2>
     </div>
 
-    <div class="dds__container dds__d-flex dds__align-items-center dds__justify-content-center">
-
-        <div id="Home" class="section">
-            <h2 class="dds__h2">Home</h2>
-        </div>
-
-        <div id="Products" class="section" style="display:none">
-            <h2 class="dds__h2">Products</h2>
-        </div>
-
-        <div id="Careers" class="section" style="display:none">
-            <h2 class="dds__h2">Careers</h2>
-        </div>
+    <div id="Products" class="section" style="display:none">
+        <h2 class="dds__h2">Products</h2>
     </div>
 
+    <div id="Careers" class="section" style="display:none">
+        <h2 class="dds__h2">Careers</h2>
+    </div>
+
+    <!-- dds js -->
+    <script src="https://dds.dell.com/components/2.0.3/js/index.min.js"></script>
+    <script>
+        [].forEach.call(document.querySelectorAll('[data-toggle="dds__side-nav"]'), function (element) {
+            console.log(element, "<<<<");
+            new DDS.SideNav(element);
+        });
+    </script>
 </body>
 
 </html>
