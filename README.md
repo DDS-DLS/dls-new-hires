@@ -1,10 +1,10 @@
 # Dell Design Language Application Test
 
 ## What are you creating?   
-You are developing a simple job application. The candidates should be able to navigate to the "Career" tab, click the "Apply Now" button and send their data to the company. The application you will work on already has a tab navigation system. Your job is to complete this application by adding a button under the "Career" tab to trigger a modal containing a contact form with inputs for "Name", "Email" and "Phone number", as well as a "Submit" button. 
+You are developing a simple job application. The candidates should be able to navigate to the "Careers" link on the side navigation, click the "Apply Now" button and send their data to the company. The application you will work on already has a side navigation component. Your job is to complete this application by adding a button on the "Careers" page to trigger a modal containing a contact form with inputs for "Name", "Email" and "Phone number", as well as a "Submit" button. 
 
 ## How the user should use your application?    
-1 - Navigate to the "Career" tab;    
+1 - Navigate to the "Careers" side navigation link;    
 2 - Click on the "Apply Now" button;    
 3 - Fill the inputs with their user data;   
 4 - Click "Submit" button.  
